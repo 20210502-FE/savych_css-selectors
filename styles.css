@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    height: 168px;
+    background-color: #455A64;
+    color: #CFD8DC;
+}
+
+.content {
+    background-color: #607D8B;
+    height: calc(100vh - 168px - 40px);
+}
+
+.footer {
+    background-color: #BDBDBD;
+    height: 40px;
+}
+
+.header__nav-item {
+    border-bottom: 1px solid #ffffff;
+}
+
+.header__nav-link {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header__nav-link:hover {
+    color: #00BCD4;
+}
+
+.header__nav-link:focus {
+    color: #00BCD4;
+}
+
+/*.header__nav-link:visited {*/
+/*    color: #00BCD4;*/
+/*}*/
+
+/*.header__nav-link:link {*/
+/*    color: #00BCD4;*/
+/*}*/
+
+.header__nav-link:first-child {
+
+}
+
+.header__nav-link:last-child {
+
+}
+
+/*odd - непарні*/
+.header__nav-link:nth-child(odd) {
+
+}
+.header__nav-link:nth-child(2n+1) {
+
+}
+
+/*even - парні*/
+.header__nav-link:nth-child(even) {
+
+}
+.header__nav-link:nth-child(2n) {
+
+}
+
+/*+ вибираємо сусідній елемент*/
+.content__checkbox:checked + label {
+    color: #ffffff;
+}
+.content__checkbox_child:checked {
+
+}
+
+/*перший нащадок*/
+.content > div {
+
+}
+
+input[type="checkbox"] {
+
+}
+
+[class*="header__nav"] {
+    color: #000000;
+}
+
+a[href*="github"] {
+    color: red;
+}
+
+a[href*="github"]:hover {
+    color: #ffffff;
+}
+
+.content__img-wrapper {
+    padding: 25px;
+}

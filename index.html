@@ -5,9 +5,48 @@
 	<meta name="viewport"
 	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>CSS selectors</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	
+	<header class="header">
+		<nav class="header__nav">
+			<ul class="header__nav-list">
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#">Home</a>
+				</li>
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#">About</a>
+				</li>
+				<li class="header__nav-item">
+					<a class="header__nav-link" href="#">Contacts</a>
+				</li>
+				<li class="header__nav-item">
+					<a class="header__nav-link"
+					   href="https://github.com/">Github</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="content">
+		<div class="content__img-wrapper">
+			<img src="images/sea.jpg" alt="sea">
+		</div>
+		<div>
+			<input type="checkbox" id="content-input"
+			       class="content__checkbox">
+			<label for="content-input">I like sea!</label>
+		</div>
+		<div>
+			<label>
+				<input type="checkbox"
+				       class="content__checkbox content__checkbox_child">
+				I like sea!
+			</label>
+		</div>
+	</main>
+	<footer class="footer">
+		(c) Copyrights
+	</footer>
 </body>
 </html>
